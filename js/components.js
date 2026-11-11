@@ -23,10 +23,18 @@ export function renderNavbar() {
                 </a>
 
                 <!-- Navigasi Desktop -->
-                <div class="hidden items-center gap-9 text-sm font-semibold text-slate-500 lg:flex">
-                    <a href="#" class="transition hover:text-blue-600">Beranda</a>
-                    <a href="#roles" class="text-blue-600">Karier</a>
-                    <a href="#about" class="transition hover:text-blue-600">Tentang Kami</a>
+                <div class="hidden items-center gap-9 text-sm font-semibold lg:flex">
+                    <a href="#"
+                    data-nav-link
+                    class="text-slate-500 transition duration-200 hover:text-blue-600">
+                        Beranda
+                    </a>
+
+                    <a href="#roles"
+                    data-nav-link
+                    class="text-slate-500 transition duration-200 hover:text-blue-600">
+                        Karier
+                    </a>
                 </div>
 
                 <!-- Tombol Desktop -->
@@ -55,18 +63,15 @@ export function renderNavbar() {
                 <div class="flex flex-col gap-1 text-sm font-semibold">
 
                     <a href="#"
-                        class="rounded-lg px-4 py-3 text-slate-600 transition hover:bg-blue-50 hover:text-blue-600">
-                        Beranda
+                        data-nav-link
+                        class="rounded-lg px-4 py-3 text-slate-500 transition duration-200 hover:bg-blue-50 hover:text-blue-600">
+                            Beranda
                     </a>
 
                     <a href="#roles"
-                        class="rounded-lg px-4 py-3 text-blue-600 transition hover:bg-blue-50">
-                        Karier
-                    </a>
-
-                    <a href="#about"
-                        class="rounded-lg px-4 py-3 text-slate-600 transition hover:bg-blue-50 hover:text-blue-600">
-                        Tentang Kami
+                        data-nav-link
+                        class="rounded-lg px-4 py-3 text-slate-500 transition duration-200 hover:bg-blue-50 hover:text-blue-600">
+                            Karier
                     </a>
 
                     <a href="#roles"

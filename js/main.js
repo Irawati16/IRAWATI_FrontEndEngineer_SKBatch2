@@ -137,6 +137,32 @@ document.addEventListener("click", function (event) {
 
 });
 
+/*
+|--------------------------------------------------------------------------
+| ACTIVE NAVIGATION
+|--------------------------------------------------------------------------
+*/
+
+document.addEventListener("click", function (event) {
+
+    const navLink = event.target.closest("[data-nav-link]");
+
+    if (!navLink) return;
+
+    // Menghapus status aktif dari semua menu
+    document.querySelectorAll("[data-nav-link]").forEach(link => {
+        link.classList.remove("text-blue-600");
+        link.classList.add("text-slate-500");
+    });
+
+    // Mengaktifkan menu yang diklik
+    document.querySelectorAll(`[data-nav-link][href="${navLink.getAttribute("href")}"]`)
+        .forEach(link => {
+            link.classList.remove("text-slate-500");
+            link.classList.add("text-blue-600");
+        });
+
+});
 
 /*
 |--------------------------------------------------------------------------

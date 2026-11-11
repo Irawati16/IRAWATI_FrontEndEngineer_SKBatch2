@@ -23,7 +23,7 @@ export function renderNavbar() {
                 </a>
 
                 <!-- Navigasi Desktop -->
-                <div class="hidden items-center gap-9 text-sm font-semibold text-slate-500 ld:flex">
+                <div class="hidden items-center gap-9 text-sm font-semibold text-slate-500 lg:flex">
                     <a href="#" class="transition hover:text-blue-600">Beranda</a>
                     <a href="#roles" class="text-blue-600">Karier</a>
                     <a href="#about" class="transition hover:text-blue-600">Tentang Kami</a>
@@ -31,7 +31,7 @@ export function renderNavbar() {
 
                 <!-- Tombol Desktop -->
                 <a href="#roles"
-                    class="hidden items-center gap-2 rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-blue-200 transition hover:-translate-y-0.5 hover:bg-blue-700 ld:inline-flex">
+                    class="hidden items-center gap-2 rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-blue-200 transition hover:-translate-y-0.5 hover:bg-blue-700 lg:inline-flex">
                     <span>Gabung Bersama Kami</span>
                     <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
                 </a>
@@ -40,7 +40,7 @@ export function renderNavbar() {
                 <button
                     id="mobile-menu-toggle"
                     type="button"
-                    class="flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 text-slate-700 transition hover:bg-blue-50 hover:text-blue-600 ld:hidden"
+                    class="flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 text-slate-700 transition hover:bg-blue-50 hover:text-blue-600 lg:hidden"
                     aria-label="Buka menu navigasi"
                     aria-expanded="false"
                     aria-controls="mobile-menu"
@@ -51,7 +51,7 @@ export function renderNavbar() {
             </div>
 
             <!-- Menu Mobile -->
-            <div id="mobile-menu" class="hidden border-t border-slate-100 bg-white px-5 py-4 ld:hidden">
+            <div id="mobile-menu" class="hidden border-t border-slate-100 bg-white px-5 py-4 lg:hidden">
                 <div class="flex flex-col gap-1 text-sm font-semibold">
 
                     <a href="#"

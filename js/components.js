@@ -268,10 +268,12 @@ export function renderRoleSection() {
                         </h3>
                     </div>
 
-                    <div id="department-filters"
-                        class="flex flex-nowrap gap-2.5 overflow-x-auto overscroll-x-contain scroll-smooth pb-2 md:flex-wrap
-                        md:overflow-visible md:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                    <div
+                        id="department-filters"
+                        class="flex flex-nowrap gap-2.5 overflow-x-auto overscroll-x-contain scroll-smooth
+                        pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                     </div>
+
 
                 </div>
 
